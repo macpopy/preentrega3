@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../fonts/fuente1/mi-fuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url('../fonts/fuente2/mi-fuente2.ttf') format('truetype'); /* Cambia el nombre del archivo según corresponda */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menu2 {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            font-size: 20px;
+            text-align: center;
+            margin: 0 10px;
+            font-family: 'MiFuentePersonalizada';
+
+            a {
+                color: rgb(129, 26, 45);
+                text-decoration: none;
+                font-size: 1.1em;
+                font-weight: bold;
+
+                &:hover {
+                    color: rgb(175, 76, 94);
+                }
+            }
+        }
+    }
+}

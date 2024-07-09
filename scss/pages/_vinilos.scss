@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../fonts/fuente1/mi-fuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url('../fonts/fuente2/mi-fuente2.ttf') format('truetype'); /* Cambia el nombre del archivo según corresponda */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menuvinilos {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            font-size: 20px;
+            text-align: center;
+            margin: 0 10px;
+            font-family: 'MiFuentePersonalizada';
+
+            a {
+                color: black;
+                text-decoration: none;
+                font-size: 1.1em;
+                font-weight: bold;
+
+                &:hover {
+                    color: rgb(129, 26, 45);
+                }
+            }
+        }
+    }
+}
+
+.buscar {
+    font-family: 'MiFuentePersonalizada';
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 20px 200px;
+
+    @media (max-width: 768px) {
+        margin: 10px 50px; /* Ajustes para pantallas pequeñas */
+    }
+}
+
+/* Estilos vinilo-container */
+.vinilos-container {
+    padding: 20px;
+    margin: 100px;
+
+    @media (max-width: 768px) {
+        margin: 50px 10px; /* Ajustes para pantallas pequeñas */
+    }
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Borde con sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+
+    &:hover {
+        transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    }
+
+    .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Tamaño de fuente más grande */
+        color: #940e0e; /* Color del texto */
+        margin-bottom: 0; /* Eliminar margen inferior */
+        font-family: 'MiFuentePerzonalizada2';
+        font-weight: 400;
+    }
+
+    .card-text {
+        color: #070707; /* Color del texto secundario */
+        font-family: 'MiFuentePerzonalizada';
+    }
+}

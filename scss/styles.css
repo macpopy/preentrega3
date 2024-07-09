@@ -1,0 +1,571 @@
+@charset "UTF-8";
+header .div1 {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+header .div1 h1 {
+  font-family: "MiFuentePersonalizada", sans-serif;
+  text-align: center;
+  color: black;
+  margin: auto;
+  font-size: 40px;
+}
+header .div1 .logo3 {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+header .menu2 {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .menu2 .menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+header .menu2 .menu ul li {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "MiFuentePersonalizada";
+}
+header .menu2 .menu ul li a {
+  color: rgb(129, 26, 45);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+header .menu2 .menu ul li a:hover {
+  color: rgb(175, 76, 94);
+}
+@media (max-width: 768px) {
+  header .menu2 {
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  header .menu2 ul {
+    flex-direction: column;
+  }
+  header .menu2 ul li {
+    margin: 5px 0;
+  }
+}
+
+.gridfooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas flexibles que se ajustan al tamaño del contenedor */
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(129, 26, 45);
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0; /*margin: -30px auto -40px -10px;*/
+}
+.gridfooter .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* Altura de 300px */
+}
+.gridfooter .grid-item img {
+  max-width: 50%;
+  max-height: 50%;
+  width: auto;
+  height: auto;
+  /*margin: 10%;*/
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.gridfooter .grid-item:hover img {
+  transform: scale(1.2);
+}
+.gridfooter .grid-item ul {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+.gridfooter .grid-item ul li {
+  padding: 5px 0; /* Espaciado entre los elementos de la lista */
+  color: white; /* Color del texto */
+}
+.gridfooter .grid-item ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "MiFuentePersonalizada";
+}
+.gridfooter .grid-item ul li a:hover {
+  color: rgb(29, 12, 12);
+  transform: scale(1.2);
+}
+
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../fonts/fuente1/mi-fuente.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MiFuentePersonalizada2";
+  src: url("../fonts/fuente2/mi-fuente2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MiFuentePersonalizada2", sans-serif;
+}
+
+.div1 {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+.div1 h1 {
+  font-family: "MiFuentePersonalizada", sans-serif;
+  text-align: center;
+  color: black;
+  margin: auto;
+  font-size: 40px;
+}
+.div1 .logo3 {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .div1 {
+    grid-template-columns: 1fr;
+  }
+  .div1 h1 {
+    font-size: 30px;
+  }
+  .div1 .logo3 {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .div1 {
+    grid-template-columns: 1fr;
+  }
+  .div1 h1 {
+    font-size: 25px;
+  }
+  .div1 .logo3 {
+    width: 70%;
+  }
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px;
+  padding: 0;
+  position: relative;
+  top: 0px;
+}
+
+.portada {
+  background-color: rgb(129, 26, 45);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1%;
+  margin: 0px;
+}
+.portada h2 {
+  font-family: "MiFuentePersonalizada", sans-serif;
+  text-align: center;
+  color: blanchedalmond;
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+  display: block;
+  margin-top: 0%;
+  margin-right: 5%;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+}
+.grid1 p {
+  font-family: "MiFuentePersonalizada2", sans-serif;
+  font-size: 25px;
+  color: rgb(129, 26, 45);
+}
+.grid1 .grid1-item {
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.grid1 .grid1-item:hover {
+  transform: scale(1.1);
+}
+.grid1 .grid1-item img {
+  max-width: 100%;
+  height: auto;
+}
+.grid1 .grid1-item h3 {
+  margin: 10px 0;
+  font-family: "MiFuentePersonalizada";
+}
+.grid1 .grid1-item h3:hover {
+  color: rgb(175, 76, 94);
+}
+
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../fonts/fuente1/mi-fuente.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MiFuentePersonalizada2";
+  src: url("../fonts/fuente2/mi-fuente2.ttf") format("truetype"); /* Cambia el nombre del archivo según corresponda */
+  font-weight: normal;
+  font-style: normal;
+}
+.menu2 {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.menu2 ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu2 ul li {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "MiFuentePersonalizada";
+}
+.menu2 ul li a {
+  color: rgb(129, 26, 45);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.menu2 ul li a:hover {
+  color: rgb(175, 76, 94);
+}
+
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../fonts/fuente1/mi-fuente.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MiFuentePersonalizada2";
+  src: url("../fonts/fuente2/mi-fuente2.ttf") format("truetype"); /* Cambia el nombre del archivo según corresponda */
+  font-weight: normal;
+  font-style: normal;
+}
+.menuvinilos {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.menuvinilos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.menuvinilos ul li {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "MiFuentePersonalizada";
+}
+.menuvinilos ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.menuvinilos ul li a:hover {
+  color: rgb(129, 26, 45);
+}
+
+.buscar {
+  font-family: "MiFuentePersonalizada";
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 20px 200px;
+}
+@media (max-width: 768px) {
+  .buscar {
+    margin: 10px 50px; /* Ajustes para pantallas pequeñas */
+  }
+}
+
+/* Estilos vinilo-container */
+.vinilos-container {
+  padding: 20px;
+  margin: 100px;
+}
+@media (max-width: 768px) {
+  .vinilos-container {
+    margin: 50px 10px; /* Ajustes para pantallas pequeñas */
+  }
+}
+
+/* Estilos para las tarjetas */
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Borde con sombra suave */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+.card:hover {
+  transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+}
+.card .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card .card-title {
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  color: #940e0e; /* Color del texto */
+  margin-bottom: 0; /* Eliminar margen inferior */
+  font-family: "MiFuentePerzonalizada2";
+  font-weight: 400;
+}
+.card .card-text {
+  color: #070707; /* Color del texto secundario */
+  font-family: "MiFuentePerzonalizada";
+}
+
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../fonts/fuente1/mi-fuente.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MiFuentePersonalizada2";
+  src: url("../fonts/fuente2/mi-fuente2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.menu2 {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.menu2 ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu2 ul li {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "MiFuentePersonalizada2";
+}
+.menu2 ul li a {
+  color: rgb(129, 26, 45);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.menu2 ul li a:hover {
+  color: rgb(175, 76, 94);
+}
+
+/* Carousel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+/* Grid Pestana cafeteria */
+.container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -110px;
+  margin-bottom: -100px;
+  transition: transform 0.3s ease;
+}
+.container .row .col-sm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "MiFuentePersonalizada2";
+}
+.container .row .col-sm:hover {
+  transform: scale(1.05);
+}
+.container .row .col-sm img {
+  width: 100%; /* Asegura que la imagen tome todo el ancho del contenedor */
+  height: auto;
+  transition: box-shadow 0.3s ease;
+}
+.container .row .col-sm img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.container .row .col-sm h3 {
+  color: rgb(49, 9, 16);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "MiFuentePersonalizada2";
+}
+.container .row .col-sm p {
+  color: rgb(129, 26, 45);
+  font-size: 20px;
+  font-family: "MiFuentePersonalizada2";
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-reservas {
+  font-family: "MiFuentePersonalizada2";
+  margin-top: 150px;
+}
+.container-reservas .col {
+  text-align: center; /* Alinea el texto al centro */
+}
+.container-reservas .col h4 {
+  font-family: "MiFuentePersonalizada";
+}
+.container-reservas img:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% del tamaño original cuando se pasa el cursor sobre ella */
+  transition: transform 0.3s ease; /* Aplica una transición suave a la escala */
+}
+
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../fonts/fuente1/mi-fuente.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MiFuentePersonalizada2";
+  src: url("../fonts/fuente2/mi-fuente2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+body main h2 {
+  font-family: "MiFuentePersonalizada";
+  font-size: 30px;
+  text-align: center;
+  color: rgb(167, 80, 96);
+  margin: 40px auto;
+}
+body main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid green;
+  margin: 50px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+body main form div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+body main form div p, body main form div label {
+  font-family: "MiFuentePersonalizada";
+  font-size: 20px;
+}
+body main form div input, body main form div .form-check-input, body main form div .form-control {
+  width: 100%;
+}
+body main form div .dropdown {
+  width: 100%;
+}
+body main form .btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body main form {
+    padding: 10px;
+  }
+  body main form div p, body main form div label {
+    font-size: 18px;
+  }
+  body main form div input, body main form div .form-check-input, body main form div .form-control {
+    font-size: 16px;
+  }
+  body main form .btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  body main h2 {
+    font-size: 24px;
+  }
+  body main form {
+    padding: 5px;
+  }
+  body main form div p, body main form div label {
+    font-size: 16px;
+  }
+  body main form div input, body main form div .form-check-input, body main form div .form-control {
+    font-size: 14px;
+  }
+  body main form .btn {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

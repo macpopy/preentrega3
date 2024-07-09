@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../fonts/fuente1/mi-fuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url('../fonts/fuente2/mi-fuente2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MiFuentePersonalizada2', sans-serif;
+}
+
+.div1 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100vw;
+
+    h1 {
+        font-family: 'MiFuentePersonalizada', sans-serif;
+        text-align: center;
+        color: black;
+        margin: auto;
+        font-size: 40px;
+    }
+
+    .logo3 {
+        width: 20%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        h1 {
+            font-size: 30px;
+        }
+        .logo3 {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        h1 {
+            font-size: 25px;
+        }
+        .logo3 {
+            width: 70%;
+        }
+    }
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    top: 0px;
+}
+
+.portada {
+    background-color: rgb(129, 26, 45);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1%;
+    margin: 0px;
+
+    h2 {
+        font-family: 'MiFuentePersonalizada', sans-serif;
+        text-align: center;
+        color: blanchedalmond;
+    }
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-top: 0%;
+    margin-right: 5%;
+}
+
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+
+    p {
+        font-family: 'MiFuentePersonalizada2', sans-serif;
+        font-size: 25px;
+        color: rgb(129, 26, 45);
+    }
+
+    .grid1-item {
+        border: 2px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-family: 'MiFuentePersonalizada';
+
+            &:hover {
+                color: rgb(175, 76, 94);
+            }
+        }
+    }
+}
